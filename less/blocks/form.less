@@ -1,0 +1,108 @@
+.form__input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 43px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7c7c7c;
+  border-radius: 0;
+  font-family: @font-light;
+  font-size: 24px;
+  line-height: 54px;
+}
+input::-webkit-input-placeholder {
+  font-family: @font-light;
+  font-size: 24px;
+  line-height: 54px;
+  color: @font-black;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  font-family: @font-light;
+  font-size: 24px;
+  line-height: 54px;
+  color: @font-black;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  font-family: @font-light;
+  font-size: 24px;
+  line-height: 54px;
+  color: @font-black;
+}
+input:-ms-input-placeholder {
+  font-family: @font-light;
+  font-size: 24px;
+  line-height: 0;
+  color: @font-black;
+}
+.form__checkbox-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+.form__label {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-left: 52px;
+  font-family: @font-light;
+  font-size: 18px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #7c7c7c;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 23px 16px;
+    opacity: 0;
+  }
+}
+.form__checkbox {
+  display: none;
+  &:checked ~ .form__label::after {
+    opacity: 1;
+  }
+}
+.form__link {
+  border-bottom: 1px dotted #a2a1a1;
+  text-decoration: none;
+  color: @font-black;
+}
+
+@media (max-width: 1121px) {
+  .form__input {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .form__input {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .form__label {
+    font-size: 16px;
+    &::before {
+      top: 20px;
+      left: 10px;
+    }
+    &::after {
+      top: 20px;
+      left: 10px;
+    }
+  }
+}

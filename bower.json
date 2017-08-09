@@ -1,0 +1,10 @@
+{
+   "name": "promo",
+   "dependencies": {
+      "normalize.css": "~7.0.0",
+      "jquery": "~2.2.4",
+      "swiper": "~3.4.1",
+      "magnific-popup": "https://github.com/dimsemenov/Magnific-Popup.git"
+   },
+   "private": true
+}

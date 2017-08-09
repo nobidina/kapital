@@ -1,0 +1,39 @@
+.copyright {
+  width: 23%;
+}
+.copyright__text {
+  font-family: @font-light;
+  font-size: 16px;
+  line-height: 18px;
+  color: @font-white;
+}
+.copyright__link {
+  opacity: 0.8;
+  border-bottom: 1px solid #335155;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @font-white;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 690px) {
+  .copyright {
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .copyright {
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,26 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 52px 4% 60px 5.2%;
+  background-color: @bg-dark;
+}
+
+@media (max-width: 690px) {
+  .page-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 37px;
+  }
+}
+
+@media (max-width: 414px) {
+  .page-footer {
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+}
