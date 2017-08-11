@@ -13,7 +13,7 @@
   text-align: center;
   font-size: 44px;
   line-height: 54px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.3px;
   color: @font-white;
 }
@@ -27,6 +27,7 @@
 }
 .features__text {
   margin: 20px 0 28px 0;
+  font-family: @font-light;
   color: @font-white;
   &_orange {
     font-family: @font-bold;
@@ -41,13 +42,65 @@
   }
 }
 
+@media (max-width: 1196px) {
+  .features__left-block {
+    width: 17%;
+  }
+  .features__right-block {
+    box-sizing: border-box;
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .features__left-block {
+    width: 18%;
+  }
+}
+
+@media (max-width: 998px) {
+  .features__left-block {
+    width: 20%;
+  }
+}
+
+@media (max-width: 941px) {
+  .features__left-block {
+    width: 20%;
+  }
+}
+
+@media (max-width: 899px) {
+  .features__left-block {
+    width: 21%;
+  }
+}
+
+@media (max-width: 857px) {
+  .features__left-block {
+    width: 22%;
+  }
+}
+
+@media (max-width: 820px) {
+  .features__left-block {
+    width: 23%;
+  }
+}
+
+@media (max-width: 788px) {
+  .features__left-block {
+    width: 24%;
+  }
+}
+
 @media (max-width: 768px) {
   .features__title {
     font-size: 30px;
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 755px) {
   .features {
     flex-direction: column;
     padding: 57px 5% 57px 5%;
@@ -84,13 +137,16 @@
   .features {
     padding-top: 35px;
     padding-left: 4%;
-    padding-right: 5%;
+    padding-right: 4%;
   }
   .features__title {
     margin-bottom: 8px;
   }
   .features__left-block {
     margin-bottom: 18px;
+  }
+  .features__right-block {
+    padding-right: 0;
   }
   .features__text-wrapper {
     box-sizing: border-box;
